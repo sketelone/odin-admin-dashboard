@@ -1,0 +1,83 @@
+
+
+.container {
+    display: grid;
+    grid-template: 1fr 3fr 3fr / 1fr 3fr 1fr;
+    background-color: rgb(241, 233, 241);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-column: 2 / 4;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1 / 4;
+    background-color: rgb(245, 206, 245);
+    padding: 20px;
+    gap: 30px;
+}
+
+.logo {
+    justify-self: start;
+    font-size:32px;
+    font-style:extra-bold;
+}
+
+.nav, .nav-2 {
+
+}
+.nav ul, .nav-2 ul  {
+    display:grid;
+    list-style:none;
+    gap: 10px;
+}
+
+.projects {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    grid-row: 2 / 4;
+}
+
+.card-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}    
+
+h4 {
+    margin:10px 0px;
+}
+
+.card {
+    background-color: rgb(255, 248, 255);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.announcements {
+    display:grid;
+    padding: 20px;
+    grid-row: 2 / 3;
+}
+
+.blurb {
+    background-color: rgb(255, 248, 255);
+    padding: 20px;
+}
+
+.trending {
+    display:grid;
+    grid-row: 3 / 4;
+    padding: 20px;
+}
+
+.other-user {
+    background-color: rgb(255, 248, 255);
+    height: 50px;
+}
