@@ -60,7 +60,6 @@ h4 {
     border-radius: 6px;
     padding: 20px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-
 }
 
 .card {
@@ -77,6 +76,7 @@ h4 {
     display:grid;
     padding: 20px;
     grid-row: 2 / 3;
+    align-self:start;
 }
 
 .blurb-container {
@@ -85,11 +85,11 @@ h4 {
 }
 
 .blurb {
-
+    margin: 10px;
 }
 
 .blurb-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: black;
 }
@@ -98,6 +98,7 @@ h4 {
     display:grid;
     grid-row: 3 / 4;
     padding: 20px;
+    align-self:start;
 }
 
 .other-user {
