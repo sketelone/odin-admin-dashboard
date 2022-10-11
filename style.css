@@ -71,7 +71,7 @@ h4 {
     display: grid;
     grid-template-rows: auto;
     border-left: solid 10px rgb(141, 12, 38);
-
+    color: darkslategray;
 }
 
 .icons {
@@ -87,6 +87,7 @@ h4 {
     font-weight: bold;
     align-self: end;
     margin: 0px;
+    color: black;
 }
 
 .announcements {
@@ -102,9 +103,12 @@ h4 {
 }
 
 .blurb {
-    /* margin: 10px; */
+
 }
 
+hr {
+    margin: 15px 0px;
+}
 .blurb-title {
     font-size: 14px;
     font-weight: bold;
@@ -113,16 +117,32 @@ h4 {
 
 .trending {
     display:grid;
-    grid-row: 3 / 4;
     padding: 20px;
-    align-self:start;
+    grid-row: 3 / 4;
+    align-self:end;
+}
+
+.trending-container {
+    display: grid;
+    gap: 20px;
 }
 
 .other-user {
     display: grid;
-    grid-template-columns: 1fr 1fr / 40px 200px;
+    grid-template-columns: 40px 200px;
+    gap: 20px;
     background-color: rgb(255, 248, 255);
     height: 50px;
+    font-size:12px;
+    color: darkslategray;
+    align-self: center;
+    letter-spacing: 0.2em;
+}
+
+.user-name {
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0em;
 }
 
 .large-user-icon {
@@ -133,4 +153,6 @@ h4 {
 .small-user-icon {
     height:40px;
     border-radius: 50%;
+    /* border: solid 1px black; */
+    justify-self: center;
 }
