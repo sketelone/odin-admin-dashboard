@@ -12,9 +12,53 @@
 
 .header {
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 50px auto / auto 300px;
     grid-column: 2 / 4;
     background-color:  rgb(255, 248, 255);
+    padding: 20px 40px;
+    gap: 20px;
+    font-weight: bold;
+}
+
+
+
+.search {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 20px 1fr;
+}
+
+.user-bar {
+    justify-self: end;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    font-size: 10px;
+    align-items: center;
+}
+
+.main-user-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-actions, .user-bar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+}
+
+.user-actions {
+    justify-items: center;
+
+
 }
 
 .sidebar {
@@ -169,4 +213,23 @@ hr {
     border-radius: 50%;
     /* border: solid 1px black; */
     justify-self: center;
+}
+
+button {
+    background-color: rgb(202, 170, 202);
+    padding:10px 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+input {
+    background-color: rgb(241, 233, 241);
+    border: none;
+    border-radius: 30px;
+    height: 25px;
+    width: 500px;
+
 }
