@@ -12,21 +12,23 @@
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
     grid-column: 2 / 4;
+    background-color:  rgb(255, 248, 255);
 }
 
 .sidebar {
     display: grid;
     grid-template-rows: 100px repeat(2, 200px);
     grid-row: 1 / 4;
-    background-color: rgb(245, 206, 245);
+    background-color: rgb(202, 170, 202);
     padding: 20px;
     align-items: center;
+    color:white;
 }
 
 .logo {
     justify-self: start;
     font-size:32px;
-    font-style:extra-bold;
+    font-weight:bolder;
 }
 
 .nav, .nav-2 {
@@ -104,4 +106,14 @@ h4 {
 .other-user {
     background-color: rgb(255, 248, 255);
     height: 50px;
+}
+
+.large-user-icon {
+    height:70px;
+    border-radius: 50%;
+}
+
+.small-user-icon {
+    height:40px;
+    border-radius: 50%;
 }
