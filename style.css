@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     display: grid;
@@ -65,13 +68,25 @@ h4 {
 }
 
 .card {
+    display: grid;
+    grid-template-rows: auto;
+    border-left: solid 10px rgb(141, 12, 38);
 
-    
+}
+
+.icons {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: 30px;
 }
 
 .title {
     font-size: 16px;
     font-weight: bold;
+    align-self: end;
+    margin: 0px;
 }
 
 .announcements {
@@ -87,7 +102,7 @@ h4 {
 }
 
 .blurb {
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .blurb-title {
@@ -104,6 +119,8 @@ h4 {
 }
 
 .other-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr / 40px 200px;
     background-color: rgb(255, 248, 255);
     height: 50px;
 }
